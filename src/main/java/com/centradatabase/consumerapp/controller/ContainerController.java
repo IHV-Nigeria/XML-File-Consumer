@@ -1,7 +1,6 @@
 package com.centradatabase.consumerapp.controller;
 
 import com.centradatabase.consumerapp.model.Container;
-import com.centradatabase.consumerapp.repository.ContainerRepository;
 import com.centradatabase.consumerapp.service.ContainerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

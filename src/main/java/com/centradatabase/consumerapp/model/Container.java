@@ -6,16 +6,13 @@
 package com.centradatabase.consumerapp.model;
 
 /**
+ *
  * @author lordmaul
  */
 
 import org.springframework.data.annotation.Id;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 
 /**
@@ -23,7 +20,7 @@ import java.io.Serializable;
  * Java class for anonymous complex type.
  * <p>
  * The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -41,13 +38,13 @@ import java.io.Serializable;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {"id", "messageHeader", "messageData"})
+@XmlType(name = "", propOrder = { "id","messageHeader", "messageData" })
 @XmlRootElement(name = "Container")
 public class Container implements Serializable {
 
     @Id
-    @XmlElement(name = "Id", required = true)
-    private String id;
+    @XmlElement(name = "id", required = true)
+    String id;
 
     @XmlElement(name = "MessageHeader", required = true)
     private MessageHeaderType messageHeader;
@@ -82,7 +79,6 @@ public class Container implements Serializable {
     public void setMessageData(MessageDataType messageData) {
         this.messageData = messageData;
     }
-
 
     public String getId() {
         return id;

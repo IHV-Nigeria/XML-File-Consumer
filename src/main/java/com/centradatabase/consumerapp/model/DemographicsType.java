@@ -8,21 +8,18 @@
 
 package com.centradatabase.consumerapp.model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-//import javax.xml.datatype.Date;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.util.Date;
+
+//import javax.xml.datatype.Date;
 
 
 /**
  * <p>Java class for DemographicsType complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="DemographicsType">
  *   &lt;complexContent>
@@ -60,36 +57,38 @@ import java.util.Date;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DemographicsType", propOrder = {
-        "patientId",
-        "firstName",
-        "lastName",
-        "middleName",
-        "gender",
-        "birthdate",
-        "birthdateEstimated",
-        "dead",
-        "deathDate",
-        "causeOfDeath",
-        "creator",
-        "dateCreated",
-        "phoneNumber",
-        "address1",
-        "address2",
-        "cityVillage",
-        "stateProvince",
-        "country",
-        "changedBy",
-        "dateChanged",
-        "voided",
-        "voidedBy",
-        "dateVoided",
-        "voidedReason",
-        "deathdateEstimated",
-        "patientUuid",
-        "datimId"
+    "patientId",
+    "firstName",
+    "lastName",
+    "middleName",
+    "gender",
+    "birthdate",
+    "birthdateEstimated",
+    "dead",
+    "deathDate",
+    "causeOfDeath",
+    "creator",
+    "dateCreated",
+    "phoneNumber",
+    "address1",
+    "address2",
+    "cityVillage",
+    "stateProvince",
+    "country",
+    "changedBy",
+    "dateChanged",
+    "voided",
+    "voidedBy",
+    "dateVoided",
+    "voidedReason",
+    "deathdateEstimated",
+    "patientUuid",
+    "datimId"
 })
 public class DemographicsType implements Serializable {
 
@@ -152,6 +151,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the patientId property.
+     * 
      */
     public int getPatientId() {
         return patientId;
@@ -159,6 +159,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the patientId property.
+     * 
      */
     public void setPatientId(int value) {
         this.patientId = value;
@@ -166,9 +167,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the firstName property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFirstName() {
         return firstName;
@@ -176,9 +179,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the firstName property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFirstName(String value) {
         this.firstName = value;
@@ -186,9 +191,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the lastName property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getLastName() {
         return lastName;
@@ -196,9 +203,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the lastName property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setLastName(String value) {
         this.lastName = value;
@@ -206,9 +215,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the middleName property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMiddleName() {
         return middleName;
@@ -216,9 +227,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the middleName property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMiddleName(String value) {
         this.middleName = value;
@@ -226,9 +239,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the gender property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getGender() {
         return gender;
@@ -236,9 +251,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the gender property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setGender(String value) {
         this.gender = value;
@@ -246,9 +263,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the birthdate property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getBirthdate() {
         return birthdate;
@@ -256,9 +275,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the birthdate property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setBirthdate(Date value) {
         this.birthdate = value;
@@ -266,6 +287,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the birthdateEstimated property.
+     * 
      */
     public int getBirthdateEstimated() {
         return birthdateEstimated;
@@ -273,6 +295,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the birthdateEstimated property.
+     * 
      */
     public void setBirthdateEstimated(int value) {
         this.birthdateEstimated = value;
@@ -280,6 +303,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the dead property.
+     * 
      */
     public int getDead() {
         return dead;
@@ -287,6 +311,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the dead property.
+     * 
      */
     public void setDead(int value) {
         this.dead = value;
@@ -294,9 +319,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the deathDate property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getDeathDate() {
         return deathDate;
@@ -304,9 +331,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the deathDate property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setDeathDate(Date value) {
         this.deathDate = value;
@@ -314,9 +343,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the causeOfDeath property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCauseOfDeath() {
         return causeOfDeath;
@@ -324,9 +355,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the causeOfDeath property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCauseOfDeath(String value) {
         this.causeOfDeath = value;
@@ -334,6 +367,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the creator property.
+     * 
      */
     public int getCreator() {
         return creator;
@@ -341,6 +375,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the creator property.
+     * 
      */
     public void setCreator(int value) {
         this.creator = value;
@@ -348,9 +383,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the dateCreated property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getDateCreated() {
         return dateCreated;
@@ -358,9 +395,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the dateCreated property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setDateCreated(Date value) {
         this.dateCreated = value;
@@ -368,9 +407,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the phoneNumber property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPhoneNumber() {
         return phoneNumber;
@@ -378,9 +419,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the phoneNumber property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPhoneNumber(String value) {
         this.phoneNumber = value;
@@ -388,9 +431,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the address1 property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAddress1() {
         return address1;
@@ -398,9 +443,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the address1 property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAddress1(String value) {
         this.address1 = value;
@@ -408,9 +455,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the address2 property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getAddress2() {
         return address2;
@@ -418,9 +467,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the address2 property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setAddress2(String value) {
         this.address2 = value;
@@ -428,9 +479,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the cityVillage property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCityVillage() {
         return cityVillage;
@@ -438,9 +491,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the cityVillage property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCityVillage(String value) {
         this.cityVillage = value;
@@ -448,9 +503,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the stateProvince property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getStateProvince() {
         return stateProvince;
@@ -458,9 +515,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the stateProvince property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setStateProvince(String value) {
         this.stateProvince = value;
@@ -468,9 +527,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the country property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCountry() {
         return country;
@@ -478,9 +539,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the country property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCountry(String value) {
         this.country = value;
@@ -488,6 +551,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the changedBy property.
+     * 
      */
     public int getChangedBy() {
         return changedBy;
@@ -495,6 +559,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the changedBy property.
+     * 
      */
     public void setChangedBy(int value) {
         this.changedBy = value;
@@ -502,9 +567,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the dateChanged property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getDateChanged() {
         return dateChanged;
@@ -512,9 +579,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the dateChanged property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setDateChanged(Date value) {
         this.dateChanged = value;
@@ -522,6 +591,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the voided property.
+     * 
      */
     public int getVoided() {
         return voided;
@@ -529,6 +599,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the voided property.
+     * 
      */
     public void setVoided(int value) {
         this.voided = value;
@@ -536,6 +607,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the voidedBy property.
+     * 
      */
     public int getVoidedBy() {
         return voidedBy;
@@ -543,6 +615,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the voidedBy property.
+     * 
      */
     public void setVoidedBy(int value) {
         this.voidedBy = value;
@@ -550,9 +623,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the dateVoided property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getDateVoided() {
         return dateVoided;
@@ -560,9 +635,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the dateVoided property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setDateVoided(Date value) {
         this.dateVoided = value;
@@ -570,9 +647,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the voidedReason property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVoidedReason() {
         return voidedReason;
@@ -580,9 +659,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the voidedReason property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVoidedReason(String value) {
         this.voidedReason = value;
@@ -590,6 +671,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the deathdateEstimated property.
+     * 
      */
     public int getDeathdateEstimated() {
         return deathdateEstimated;
@@ -597,6 +679,7 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the deathdateEstimated property.
+     * 
      */
     public void setDeathdateEstimated(int value) {
         this.deathdateEstimated = value;
@@ -604,9 +687,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the patientUuid property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPatientUuid() {
         return patientUuid;
@@ -614,9 +699,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the patientUuid property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPatientUuid(String value) {
         this.patientUuid = value;
@@ -624,9 +711,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Gets the value of the datimId property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDatimId() {
         return datimId;
@@ -634,9 +723,11 @@ public class DemographicsType implements Serializable {
 
     /**
      * Sets the value of the datimId property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDatimId(String value) {
         this.datimId = value;

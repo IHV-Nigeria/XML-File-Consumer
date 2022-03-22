@@ -1,21 +1,20 @@
 package com.centradatabase.consumerapp.model;
 
-
 import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
 
 public class Person implements Serializable {
     @Id
-    private String id;
-    private String name;
+    String id;
+    String name;
 
     public Person(String id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Person() {
+    public Person(){
 
     }
 

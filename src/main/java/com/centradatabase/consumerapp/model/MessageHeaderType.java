@@ -8,22 +8,18 @@
 
 package com.centradatabase.consumerapp.model;
 
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
 //import javax.xml.datatype.Date;
 
 
 /**
  * <p>Java class for MessageHeaderType complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="MessageHeaderType">
  *   &lt;complexContent>
@@ -82,22 +78,24 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "MessageHeaderType", propOrder = {
-        "messageStatusCode",
-        "messageSource",
-        "messageCreationDateTime",
-        "messageSchemaVersion",
-        "messageUniqueID",
-        "facilityDatimCode",
-        "facilityName",
-        "fileName",
-        "uploadDate",
-        "processedDate",
-        "invalid",
-        "validationError",
-        "touchTime"
+    "messageStatusCode",
+    "messageSource",
+    "messageCreationDateTime",
+    "messageSchemaVersion",
+    "messageUniqueID",
+    "facilityDatimCode",
+    "facilityName",
+    "fileName",
+    "uploadDate",
+    "processedDate",
+    "invalid",
+    "validationError",
+    "touchTime"
 })
 public class MessageHeaderType implements Serializable {
 
@@ -133,9 +131,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the messageStatusCode property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMessageStatusCode() {
         return messageStatusCode;
@@ -143,9 +143,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the messageStatusCode property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMessageStatusCode(String value) {
         this.messageStatusCode = value;
@@ -153,9 +155,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the messageSource property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMessageSource() {
         return messageSource;
@@ -163,9 +167,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the messageSource property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMessageSource(String value) {
         this.messageSource = value;
@@ -173,9 +179,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the messageCreationDateTime property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getMessageCreationDateTime() {
         return messageCreationDateTime;
@@ -183,9 +191,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the messageCreationDateTime property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setMessageCreationDateTime(Date value) {
         this.messageCreationDateTime = value;
@@ -193,9 +203,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the messageSchemaVersion property.
-     *
-     * @return possible object is
-     * {@link BigDecimal }
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigDecimal }
+     *     
      */
     public BigDecimal getMessageSchemaVersion() {
         return messageSchemaVersion;
@@ -203,9 +215,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the messageSchemaVersion property.
-     *
-     * @param value allowed object is
-     *              {@link BigDecimal }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigDecimal }
+     *     
      */
     public void setMessageSchemaVersion(BigDecimal value) {
         this.messageSchemaVersion = value;
@@ -213,9 +227,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the messageUniqueID property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getMessageUniqueID() {
         return messageUniqueID;
@@ -223,9 +239,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the messageUniqueID property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setMessageUniqueID(String value) {
         this.messageUniqueID = value;
@@ -233,9 +251,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the facilityDatimCode property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFacilityDatimCode() {
         return facilityDatimCode;
@@ -243,9 +263,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the facilityDatimCode property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFacilityDatimCode(String value) {
         this.facilityDatimCode = value;
@@ -253,9 +275,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the facilityName property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFacilityName() {
         return facilityName;
@@ -263,9 +287,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the facilityName property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFacilityName(String value) {
         this.facilityName = value;
@@ -273,9 +299,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the fileName property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFileName() {
         return fileName;
@@ -283,9 +311,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the fileName property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFileName(String value) {
         this.fileName = value;
@@ -293,9 +323,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the uploadDate property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getUploadDate() {
         return uploadDate;
@@ -303,9 +335,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the uploadDate property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setUploadDate(Date value) {
         this.uploadDate = value;
@@ -313,9 +347,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the processedDate property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getProcessedDate() {
         return processedDate;
@@ -323,9 +359,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the processedDate property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setProcessedDate(Date value) {
         this.processedDate = value;
@@ -333,6 +371,7 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the invalid property.
+     * 
      */
     public int getInvalid() {
         return invalid;
@@ -340,6 +379,7 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the invalid property.
+     * 
      */
     public void setInvalid(int value) {
         this.invalid = value;
@@ -347,9 +387,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the validationError property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValidationError() {
         return validationError;
@@ -357,9 +399,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the validationError property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValidationError(String value) {
         this.validationError = value;
@@ -367,9 +411,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Gets the value of the touchTime property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getTouchTime() {
         return touchTime;
@@ -377,9 +423,11 @@ public class MessageHeaderType implements Serializable {
 
     /**
      * Sets the value of the touchTime property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setTouchTime(Date value) {
         this.touchTime = value;

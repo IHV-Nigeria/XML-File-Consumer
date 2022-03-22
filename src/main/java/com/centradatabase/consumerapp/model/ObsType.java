@@ -8,22 +8,18 @@
 
 package com.centradatabase.consumerapp.model;
 
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
 //import javax.xml.datatype.Date;
 
 
 /**
  * <p>Java class for ObsType complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="ObsType">
  *   &lt;complexContent>
@@ -61,36 +57,38 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ObsType", propOrder = {
-        "obsUuid",
-        "obsId",
-        "personId",
-        "conceptId",
-        "encounterId",
-        "formId",
-        "pmmForm",
-        "encounterType",
-        "obsDatetime",
-        "locationId",
-        "obsGroupId",
-        "valueCoded",
-        "valueDatetime",
-        "valueNumeric",
-        "valueText",
-        "creator",
-        "dateCreated",
-        "voided",
-        "voidedBy",
-        "dateVoided",
-        "variableName",
-        "variableValue",
-        "datimId",
-        "patientUuid",
-        "encounterUuid",
-        "visitUuid",
-        "datatype"
+    "obsUuid",
+    "obsId",
+    "personId",
+    "conceptId",
+    "encounterId",
+    "formId",
+    "pmmForm",
+    "encounterType",
+    "obsDatetime",
+    "locationId",
+    "obsGroupId",
+    "valueCoded",
+    "valueDatetime",
+    "valueNumeric",
+    "valueText",
+    "creator",
+    "dateCreated",
+    "voided",
+    "voidedBy",
+    "dateVoided",
+    "variableName",
+    "variableValue",
+    "datimId",
+    "patientUuid",
+    "encounterUuid",
+    "visitUuid",
+    "datatype"
 })
 public class ObsType implements Serializable {
 
@@ -152,9 +150,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the obsUuid property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getObsUuid() {
         return obsUuid;
@@ -162,9 +162,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the obsUuid property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setObsUuid(String value) {
         this.obsUuid = value;
@@ -172,6 +174,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the obsId property.
+     * 
      */
     public int getObsId() {
         return obsId;
@@ -179,6 +182,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the obsId property.
+     * 
      */
     public void setObsId(int value) {
         this.obsId = value;
@@ -186,6 +190,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the personId property.
+     * 
      */
     public int getPersonId() {
         return personId;
@@ -193,6 +198,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the personId property.
+     * 
      */
     public void setPersonId(int value) {
         this.personId = value;
@@ -200,6 +206,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the conceptId property.
+     * 
      */
     public int getConceptId() {
         return conceptId;
@@ -207,6 +214,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the conceptId property.
+     * 
      */
     public void setConceptId(int value) {
         this.conceptId = value;
@@ -214,6 +222,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the encounterId property.
+     * 
      */
     public int getEncounterId() {
         return encounterId;
@@ -221,6 +230,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the encounterId property.
+     * 
      */
     public void setEncounterId(int value) {
         this.encounterId = value;
@@ -228,6 +238,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the formId property.
+     * 
      */
     public int getFormId() {
         return formId;
@@ -235,6 +246,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the formId property.
+     * 
      */
     public void setFormId(int value) {
         this.formId = value;
@@ -242,9 +254,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the pmmForm property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPmmForm() {
         return pmmForm;
@@ -252,9 +266,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the pmmForm property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPmmForm(String value) {
         this.pmmForm = value;
@@ -262,6 +278,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the encounterType property.
+     * 
      */
     public int getEncounterType() {
         return encounterType;
@@ -269,6 +286,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the encounterType property.
+     * 
      */
     public void setEncounterType(int value) {
         this.encounterType = value;
@@ -276,9 +294,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the obsDatetime property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getObsDatetime() {
         return obsDatetime;
@@ -286,9 +306,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the obsDatetime property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setObsDatetime(Date value) {
         this.obsDatetime = value;
@@ -296,6 +318,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the locationId property.
+     * 
      */
     public int getLocationId() {
         return locationId;
@@ -303,6 +326,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the locationId property.
+     * 
      */
     public void setLocationId(int value) {
         this.locationId = value;
@@ -310,6 +334,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the obsGroupId property.
+     * 
      */
     public int getObsGroupId() {
         return obsGroupId;
@@ -317,6 +342,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the obsGroupId property.
+     * 
      */
     public void setObsGroupId(int value) {
         this.obsGroupId = value;
@@ -324,6 +350,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the valueCoded property.
+     * 
      */
     public int getValueCoded() {
         return valueCoded;
@@ -331,6 +358,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the valueCoded property.
+     * 
      */
     public void setValueCoded(int value) {
         this.valueCoded = value;
@@ -338,9 +366,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the valueDatetime property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getValueDatetime() {
         return valueDatetime;
@@ -348,9 +378,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the valueDatetime property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setValueDatetime(Date value) {
         this.valueDatetime = value;
@@ -358,9 +390,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the valueNumeric property.
-     *
-     * @return possible object is
-     * {@link BigDecimal }
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigDecimal }
+     *     
      */
     public BigDecimal getValueNumeric() {
         return valueNumeric;
@@ -368,9 +402,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the valueNumeric property.
-     *
-     * @param value allowed object is
-     *              {@link BigDecimal }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigDecimal }
+     *     
      */
     public void setValueNumeric(BigDecimal value) {
         this.valueNumeric = value;
@@ -378,9 +414,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the valueText property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getValueText() {
         return valueText;
@@ -388,9 +426,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the valueText property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setValueText(String value) {
         this.valueText = value;
@@ -398,6 +438,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the creator property.
+     * 
      */
     public int getCreator() {
         return creator;
@@ -405,6 +446,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the creator property.
+     * 
      */
     public void setCreator(int value) {
         this.creator = value;
@@ -412,9 +454,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the dateCreated property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getDateCreated() {
         return dateCreated;
@@ -422,9 +466,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the dateCreated property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setDateCreated(Date value) {
         this.dateCreated = value;
@@ -432,6 +478,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the voided property.
+     * 
      */
     public int getVoided() {
         return voided;
@@ -439,6 +486,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the voided property.
+     * 
      */
     public void setVoided(int value) {
         this.voided = value;
@@ -446,6 +494,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the voidedBy property.
+     * 
      */
     public int getVoidedBy() {
         return voidedBy;
@@ -453,6 +502,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the voidedBy property.
+     * 
      */
     public void setVoidedBy(int value) {
         this.voidedBy = value;
@@ -460,9 +510,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the dateVoided property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getDateVoided() {
         return dateVoided;
@@ -470,9 +522,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the dateVoided property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setDateVoided(Date value) {
         this.dateVoided = value;
@@ -480,9 +534,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the variableName property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVariableName() {
         return variableName;
@@ -490,9 +546,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the variableName property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVariableName(String value) {
         this.variableName = value;
@@ -500,9 +558,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the variableValue property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVariableValue() {
         return variableValue;
@@ -510,9 +570,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the variableValue property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVariableValue(String value) {
         this.variableValue = value;
@@ -520,9 +582,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the datimId property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDatimId() {
         return datimId;
@@ -530,9 +594,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the datimId property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDatimId(String value) {
         this.datimId = value;
@@ -540,9 +606,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the patientUuid property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPatientUuid() {
         return patientUuid;
@@ -550,9 +618,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the patientUuid property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPatientUuid(String value) {
         this.patientUuid = value;
@@ -560,9 +630,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the encounterUuid property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getEncounterUuid() {
         return encounterUuid;
@@ -570,9 +642,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the encounterUuid property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setEncounterUuid(String value) {
         this.encounterUuid = value;
@@ -580,9 +654,11 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the visitUuid property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getVisitUuid() {
         return visitUuid;
@@ -590,9 +666,11 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the visitUuid property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setVisitUuid(String value) {
         this.visitUuid = value;
@@ -600,6 +678,7 @@ public class ObsType implements Serializable {
 
     /**
      * Gets the value of the datatype property.
+     * 
      */
     public int getDatatype() {
         return datatype;
@@ -607,6 +686,7 @@ public class ObsType implements Serializable {
 
     /**
      * Sets the value of the datatype property.
+     * 
      */
     public void setDatatype(int value) {
         this.datatype = value;

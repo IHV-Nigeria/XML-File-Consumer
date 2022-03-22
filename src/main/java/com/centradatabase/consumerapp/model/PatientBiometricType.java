@@ -8,21 +8,18 @@
 
 package com.centradatabase.consumerapp.model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-//import javax.xml.datatype.Date;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.util.Date;
+
+//import javax.xml.datatype.Date;
 
 
 /**
  * <p>Java class for PatientBiometricType complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="PatientBiometricType">
  *   &lt;complexContent>
@@ -48,24 +45,26 @@ import java.util.Date;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PatientBiometricType", propOrder = {
-        "biometricInfoId",
-        "patientId",
-        "template",
-        "imageHeight",
-        "imageWidth",
-        "imageDpi",
-        "imageQuality",
-        "fingerPosition",
-        "serialNumber",
-        "model",
-        "manufacturer",
-        "creator",
-        "dateCreated",
-        "patientUuid",
-        "datimId"
+    "biometricInfoId",
+    "patientId",
+    "template",
+    "imageHeight",
+    "imageWidth",
+    "imageDpi",
+    "imageQuality",
+    "fingerPosition",
+    "serialNumber",
+    "model",
+    "manufacturer",
+    "creator",
+    "dateCreated",
+    "patientUuid",
+    "datimId"
 })
 public class PatientBiometricType implements Serializable {
 
@@ -102,6 +101,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the biometricInfoId property.
+     * 
      */
     public int getBiometricInfoId() {
         return biometricInfoId;
@@ -109,6 +109,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the biometricInfoId property.
+     * 
      */
     public void setBiometricInfoId(int value) {
         this.biometricInfoId = value;
@@ -116,6 +117,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the patientId property.
+     * 
      */
     public int getPatientId() {
         return patientId;
@@ -123,6 +125,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the patientId property.
+     * 
      */
     public void setPatientId(int value) {
         this.patientId = value;
@@ -130,9 +133,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the template property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getTemplate() {
         return template;
@@ -140,9 +145,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the template property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setTemplate(String value) {
         this.template = value;
@@ -150,6 +157,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the imageHeight property.
+     * 
      */
     public int getImageHeight() {
         return imageHeight;
@@ -157,6 +165,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the imageHeight property.
+     * 
      */
     public void setImageHeight(int value) {
         this.imageHeight = value;
@@ -164,6 +173,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the imageWidth property.
+     * 
      */
     public int getImageWidth() {
         return imageWidth;
@@ -171,6 +181,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the imageWidth property.
+     * 
      */
     public void setImageWidth(int value) {
         this.imageWidth = value;
@@ -178,6 +189,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the imageDpi property.
+     * 
      */
     public int getImageDpi() {
         return imageDpi;
@@ -185,6 +197,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the imageDpi property.
+     * 
      */
     public void setImageDpi(int value) {
         this.imageDpi = value;
@@ -192,6 +205,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the imageQuality property.
+     * 
      */
     public int getImageQuality() {
         return imageQuality;
@@ -199,6 +213,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the imageQuality property.
+     * 
      */
     public void setImageQuality(int value) {
         this.imageQuality = value;
@@ -206,9 +221,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the fingerPosition property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getFingerPosition() {
         return fingerPosition;
@@ -216,9 +233,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the fingerPosition property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setFingerPosition(String value) {
         this.fingerPosition = value;
@@ -226,9 +245,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the serialNumber property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSerialNumber() {
         return serialNumber;
@@ -236,9 +257,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the serialNumber property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSerialNumber(String value) {
         this.serialNumber = value;
@@ -246,9 +269,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the model property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getModel() {
         return model;
@@ -256,9 +281,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the model property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setModel(String value) {
         this.model = value;
@@ -266,9 +293,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the manufacturer property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getManufacturer() {
         return manufacturer;
@@ -276,9 +305,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the manufacturer property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setManufacturer(String value) {
         this.manufacturer = value;
@@ -286,6 +317,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the creator property.
+     * 
      */
     public int getCreator() {
         return creator;
@@ -293,6 +325,7 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the creator property.
+     * 
      */
     public void setCreator(int value) {
         this.creator = value;
@@ -300,9 +333,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the dateCreated property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getDateCreated() {
         return dateCreated;
@@ -310,9 +345,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the dateCreated property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setDateCreated(Date value) {
         this.dateCreated = value;
@@ -320,9 +357,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the patientUuid property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPatientUuid() {
         return patientUuid;
@@ -330,9 +369,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the patientUuid property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPatientUuid(String value) {
         this.patientUuid = value;
@@ -340,9 +381,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Gets the value of the datimId property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDatimId() {
         return datimId;
@@ -350,9 +393,11 @@ public class PatientBiometricType implements Serializable {
 
     /**
      * Sets the value of the datimId property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDatimId(String value) {
         this.datimId = value;

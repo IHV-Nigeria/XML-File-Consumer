@@ -8,20 +8,20 @@
 
 package com.centradatabase.consumerapp.model;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for MessageDataType complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="MessageDataType">
  *   &lt;complexContent>
@@ -40,17 +40,19 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "MessageDataType", propOrder = {
-        "demographics",
-        "visits",
-        "encounters",
-        "obs",
-        "encounterProviders",
-        "patientIdentifiers",
-        "patientBiometrics",
-        "patientPrograms"
+    "demographics",
+    "visits",
+    "encounters",
+    "obs",
+    "encounterProviders",
+    "patientIdentifiers",
+    "patientBiometrics",
+    "patientPrograms"
 })
 public class MessageDataType implements Serializable {
 
@@ -73,9 +75,11 @@ public class MessageDataType implements Serializable {
 
     /**
      * Gets the value of the demographics property.
-     *
-     * @return possible object is
-     * {@link DemographicsType }
+     * 
+     * @return
+     *     possible object is
+     *     {@link DemographicsType }
+     *     
      */
     public DemographicsType getDemographics() {
         return demographics;
@@ -83,9 +87,11 @@ public class MessageDataType implements Serializable {
 
     /**
      * Sets the value of the demographics property.
-     *
-     * @param value allowed object is
-     *              {@link DemographicsType }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DemographicsType }
+     *     
      */
     public void setDemographics(DemographicsType value) {
         this.demographics = value;
@@ -93,23 +99,25 @@ public class MessageDataType implements Serializable {
 
     /**
      * Gets the value of the visits property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the visits property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getVisits().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link VisitType }
+     * 
+     * 
      */
     public List<VisitType> getVisits() {
         if (visits == null) {
@@ -120,23 +128,25 @@ public class MessageDataType implements Serializable {
 
     /**
      * Gets the value of the encounters property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the encounters property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getEncounters().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link EncounterType }
+     * 
+     * 
      */
     public List<EncounterType> getEncounters() {
         if (encounters == null) {
@@ -147,23 +157,25 @@ public class MessageDataType implements Serializable {
 
     /**
      * Gets the value of the obs property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the obs property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getObs().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ObsType }
+     * 
+     * 
      */
     public List<ObsType> getObs() {
         if (obs == null) {
@@ -174,23 +186,25 @@ public class MessageDataType implements Serializable {
 
     /**
      * Gets the value of the encounterProviders property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the encounterProviders property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getEncounterProviders().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link EncounterProviderType }
+     * 
+     * 
      */
     public List<EncounterProviderType> getEncounterProviders() {
         if (encounterProviders == null) {
@@ -201,23 +215,25 @@ public class MessageDataType implements Serializable {
 
     /**
      * Gets the value of the patientIdentifiers property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the patientIdentifiers property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getPatientIdentifiers().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link PatientIdentifierType }
+     * 
+     * 
      */
     public List<PatientIdentifierType> getPatientIdentifiers() {
         if (patientIdentifiers == null) {
@@ -228,23 +244,25 @@ public class MessageDataType implements Serializable {
 
     /**
      * Gets the value of the patientBiometrics property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the patientBiometrics property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getPatientBiometrics().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link PatientBiometricType }
+     * 
+     * 
      */
     public List<PatientBiometricType> getPatientBiometrics() {
         if (patientBiometrics == null) {
@@ -255,23 +273,25 @@ public class MessageDataType implements Serializable {
 
     /**
      * Gets the value of the patientPrograms property.
-     * <p>
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the patientPrograms property.
-     * <p>
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getPatientPrograms().add(newItem);
      * </pre>
-     * <p>
-     * <p>
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link PatientProgramType }
+     * 
+     * 
      */
     public List<PatientProgramType> getPatientPrograms() {
         if (patientPrograms == null) {

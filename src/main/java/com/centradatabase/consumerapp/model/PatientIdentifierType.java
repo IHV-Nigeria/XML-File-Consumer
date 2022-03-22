@@ -8,21 +8,18 @@
 
 package com.centradatabase.consumerapp.model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-//import javax.xml.datatype.Date;
+import javax.xml.bind.annotation.*;
 import java.io.Serializable;
 import java.util.Date;
+
+//import javax.xml.datatype.Date;
 
 
 /**
  * <p>Java class for PatientIdentifierType complex type.
- *
+ * 
  * <p>The following schema fragment specifies the expected content contained within this class.
- *
+ * 
  * <pre>
  * &lt;complexType name="PatientIdentifierType">
  *   &lt;complexContent>
@@ -49,25 +46,27 @@ import java.util.Date;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PatientIdentifierType", propOrder = {
-        "patientIdentifierId",
-        "patientId",
-        "locationId",
-        "identifier",
-        "identifierType",
-        "preferred",
-        "creator",
-        "dateCreated",
-        "dateChanged",
-        "changedBy",
-        "voided",
-        "voidedBy",
-        "dateVoided",
-        "patientIdentifierUuid",
-        "patientUuid",
-        "datimId"
+    "patientIdentifierId",
+    "patientId",
+    "locationId",
+    "identifier",
+    "identifierType",
+    "preferred",
+    "creator",
+    "dateCreated",
+    "dateChanged",
+    "changedBy",
+    "voided",
+    "voidedBy",
+    "dateVoided",
+    "patientIdentifierUuid",
+    "patientUuid",
+    "datimId"
 })
 public class PatientIdentifierType implements Serializable {
 
@@ -106,6 +105,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the patientIdentifierId property.
+     * 
      */
     public int getPatientIdentifierId() {
         return patientIdentifierId;
@@ -113,6 +113,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the patientIdentifierId property.
+     * 
      */
     public void setPatientIdentifierId(int value) {
         this.patientIdentifierId = value;
@@ -120,6 +121,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the patientId property.
+     * 
      */
     public int getPatientId() {
         return patientId;
@@ -127,6 +129,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the patientId property.
+     * 
      */
     public void setPatientId(int value) {
         this.patientId = value;
@@ -134,6 +137,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the locationId property.
+     * 
      */
     public int getLocationId() {
         return locationId;
@@ -141,6 +145,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the locationId property.
+     * 
      */
     public void setLocationId(int value) {
         this.locationId = value;
@@ -148,9 +153,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the identifier property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIdentifier() {
         return identifier;
@@ -158,9 +165,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the identifier property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIdentifier(String value) {
         this.identifier = value;
@@ -168,6 +177,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the identifierType property.
+     * 
      */
     public int getIdentifierType() {
         return identifierType;
@@ -175,6 +185,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the identifierType property.
+     * 
      */
     public void setIdentifierType(int value) {
         this.identifierType = value;
@@ -182,6 +193,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the preferred property.
+     * 
      */
     public int getPreferred() {
         return preferred;
@@ -189,6 +201,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the preferred property.
+     * 
      */
     public void setPreferred(int value) {
         this.preferred = value;
@@ -196,6 +209,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the creator property.
+     * 
      */
     public int getCreator() {
         return creator;
@@ -203,6 +217,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the creator property.
+     * 
      */
     public void setCreator(int value) {
         this.creator = value;
@@ -210,9 +225,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the dateCreated property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getDateCreated() {
         return dateCreated;
@@ -220,9 +237,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the dateCreated property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setDateCreated(Date value) {
         this.dateCreated = value;
@@ -230,9 +249,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the dateChanged property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getDateChanged() {
         return dateChanged;
@@ -240,9 +261,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the dateChanged property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setDateChanged(Date value) {
         this.dateChanged = value;
@@ -250,6 +273,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the changedBy property.
+     * 
      */
     public int getChangedBy() {
         return changedBy;
@@ -257,6 +281,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the changedBy property.
+     * 
      */
     public void setChangedBy(int value) {
         this.changedBy = value;
@@ -264,6 +289,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the voided property.
+     * 
      */
     public int getVoided() {
         return voided;
@@ -271,6 +297,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the voided property.
+     * 
      */
     public void setVoided(int value) {
         this.voided = value;
@@ -278,6 +305,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the voidedBy property.
+     * 
      */
     public int getVoidedBy() {
         return voidedBy;
@@ -285,6 +313,7 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the voidedBy property.
+     * 
      */
     public void setVoidedBy(int value) {
         this.voidedBy = value;
@@ -292,9 +321,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the dateVoided property.
-     *
-     * @return possible object is
-     * {@link Date }
+     * 
+     * @return
+     *     possible object is
+     *     {@link Date }
+     *     
      */
     public Date getDateVoided() {
         return dateVoided;
@@ -302,9 +333,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the dateVoided property.
-     *
-     * @param value allowed object is
-     *              {@link Date }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Date }
+     *     
      */
     public void setDateVoided(Date value) {
         this.dateVoided = value;
@@ -312,9 +345,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the patientIdentifierUuid property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPatientIdentifierUuid() {
         return patientIdentifierUuid;
@@ -322,9 +357,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the patientIdentifierUuid property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPatientIdentifierUuid(String value) {
         this.patientIdentifierUuid = value;
@@ -332,9 +369,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the patientUuid property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPatientUuid() {
         return patientUuid;
@@ -342,9 +381,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the patientUuid property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPatientUuid(String value) {
         this.patientUuid = value;
@@ -352,9 +393,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Gets the value of the datimId property.
-     *
-     * @return possible object is
-     * {@link String }
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDatimId() {
         return datimId;
@@ -362,9 +405,11 @@ public class PatientIdentifierType implements Serializable {
 
     /**
      * Sets the value of the datimId property.
-     *
-     * @param value allowed object is
-     *              {@link String }
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDatimId(String value) {
         this.datimId = value;
