@@ -1,10 +1,12 @@
 package com.centradatabase.consumerapp.service;
 
 import com.centradatabase.consumerapp.model.Container;
-import com.centradatabase.consumerapp.model.Tracker;
+import com.centradatabase.consumerapp.model.FileUpload;
+
 import com.centradatabase.consumerapp.repository.ContainerRepository;
+
+import com.centradatabase.consumerapp.repository.FileUploadRepository;
 import com.centradatabase.consumerapp.repository.MongoRepo;
-import com.centradatabase.consumerapp.repository.TrackerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,16 +24,22 @@ public class ContainerService {
     @Autowired
     ContainerRepository containerRepository;
 
-    @Autowired
-    TrackerRepository trackRepository;
 
     @Autowired
     MongoRepo mongoRepo;
 
+    @Autowired
+    FileUploadRepository fileUploadRepository;
+
+//
+
+    private final String VALIDATINGSTATUS = "VALIDATING";
+    private final String CONSUMESTATUS = "CONSUMED";
+
     public void createPatient(List<Container> containerList) {
         if(!containerList.isEmpty()) {
             List<Container> containers = new ArrayList<>();
-            Tracker tracker = new Tracker();
+
             Boolean flag = null;
             for (Container container : containerList) {
                 Container mongoContainer = mongoRepo.findById(container.getMessageData().getDemographics().getPatientUuid()).orElse(null);
@@ -41,7 +49,6 @@ public class ContainerService {
                     if (mongoTouchTime != null && countainerTouchTime != null) {
                         flag = mongoTouchTime.before(countainerTouchTime);
                         if (flag) {
-
                             containers.add(container);
                             System.out.println("Patient Existing");
                         }
@@ -52,12 +59,8 @@ public class ContainerService {
                 }
             }
             if (containers.size() > 0){
-                if (!containers.get(0).getMessageHeader().getFacilityDatimCode().isEmpty()){
-                    tracker.setDatimCode(containers.get(0).getMessageHeader().getFacilityDatimCode());
-                    tracker.setLastUploadDate(convertDate(new Date()));
-                    trackRepository.save(tracker);
-                }
                 containerRepository.saveAll(containers);
+                updateFileUpload(containers,CONSUMESTATUS);
                 containers.clear();
                 System.out.println("Collection Saved");
             }
@@ -65,13 +68,30 @@ public class ContainerService {
         }
     }
 
-    public String convertDate(Date date){
+    private  void updateFileUpload(List<Container> currFileList, String status){
+        List<FileUpload> fileUploadList = new ArrayList<>();
+        if(currFileList.size() > 0) {
+            for(Container container : currFileList) {
+                try {
+                    FileUpload fileUpload = fileUploadRepository.findFileUploadByFileName(container.getMessageHeader().getFileName());
+                    fileUpload.setConsumerDate(new Date());
+                    fileUpload.setStatus(status);
+                    fileUploadList.add(fileUpload);
+                    //fileUploadService.updateFileUpload(fileUpload);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
 
-        Instant instant = date.toInstant();
-        ZonedDateTime zdt = instant.atZone(ZoneId.systemDefault());
-        LocalDate localDate = zdt.toLocalDate();
+            if(fileUploadList.size() > 0){
+                fileUploadRepository.saveAll(fileUploadList);
+                System.out.println("Upload Record saved");
+            }
 
-        return localDate.toString();
+
+
+        }
+
     }
 
 
