@@ -13,7 +13,8 @@ import org.springframework.context.annotation.Primary;
 public class MQConfig {
     public static final String QUEUE_EXCHANGE = "queue_exchange";
     public static final String CONSUMER_ROUTING_KEY = "consumer_routing_key";;
-    public static final String VALIDATOR_ROUTING_KEY = "consumer_routing_key";
+    public static final String VALIDATOR_ROUTING_KEY = "validator_routing_key";
+    public static final String ETL_ROUTING_KEY = "number-1";
 
     @Bean
     public Queue queueConsumer() {
@@ -23,6 +24,11 @@ public class MQConfig {
     @Bean
     public Queue queueValidator() {
         return new Queue(QueueNames.VALIDATOR_QUEUE);
+    }
+
+    @Bean
+    public Queue etlQueue() {
+        return new Queue(QueueNames.ETL_QUEUE);
     }
 
     @Bean
@@ -47,6 +53,15 @@ public class MQConfig {
                 .bind(queueValidator)
                 .to(exchangeQueues)
                 .with(VALIDATOR_ROUTING_KEY);
+    }
+
+    @Bean
+    @Primary
+    public Binding bindingEtl(Queue etlQueue, TopicExchange exchangeQueues) {
+        return BindingBuilder
+                .bind(etlQueue)
+                .to(exchangeQueues)
+                .with(ETL_ROUTING_KEY);
     }
 
     @Bean

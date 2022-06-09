@@ -34,7 +34,7 @@ public class FileUpload {
     @JoinColumn(name = "file_batch_id",referencedColumnName = "fileBatchId")
     private FileBatch fileBatchId;
 
-
+    
 
 
 }
