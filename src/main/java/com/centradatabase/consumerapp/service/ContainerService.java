@@ -8,6 +8,7 @@ import com.centradatabase.consumerapp.repository.ContainerRepository;
 
 import com.centradatabase.consumerapp.repository.FileUploadRepository;
 import com.centradatabase.consumerapp.repository.MongoRepo;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,24 +19,12 @@ import java.util.Date;
 import java.util.List;
 @Slf4j
 @Service
+@RequiredArgsConstructor
 public class ContainerService {
-
-    @Autowired
-    ContainerRepository containerRepository;
-
-    @Autowired
-    RabbitTemplate rabbitTemplate;
-
-    @Autowired
-    MongoRepo mongoRepo;
-
-    @Autowired
-    FileUploadRepository fileUploadRepository;
-
-//
-
-    private final String VALIDATINGSTATUS = "VALIDATING";
-    private final String CONSUMESTATUS = "CONSUMED";
+    private final ContainerRepository containerRepository;
+    private final RabbitTemplate rabbitTemplate;
+    private final MongoRepo mongoRepo;
+    private final FileUploadRepository fileUploadRepository;
 
     public void createPatient(List<Container> containerList) {
         if(!containerList.isEmpty()) {
@@ -51,8 +40,8 @@ public class ContainerService {
                         flag = mongoTouchTime.before(containerTouchTime);
                         if (flag) {
                             containers.add(container);
+                        } else
                             log.info("Patient Existing");
-                        }
                     }
                 } else {
                     containers.add(container);
@@ -79,7 +68,6 @@ public class ContainerService {
                     fileUpload.setConsumerDate(new Date());
                     fileUpload.setStatus("CONSUMED");
                     fileUploadList.add(fileUpload);
-                    //fileUploadService.updateFileUpload(fileUpload);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -89,12 +77,6 @@ public class ContainerService {
                 fileUploadRepository.saveAll(fileUploadList);
                 log.info("Upload Record saved");
             }
-
-
-
         }
-
     }
-
-
 }
