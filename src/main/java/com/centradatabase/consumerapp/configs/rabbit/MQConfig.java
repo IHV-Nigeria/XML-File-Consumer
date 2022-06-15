@@ -5,30 +5,41 @@ import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.amqp.support.converter.MessageConverter;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class MQConfig {
-    public static final String QUEUE_EXCHANGE = "queue_exchange";
-    public static final String CONSUMER_ROUTING_KEY = "consumer_routing_key";;
-    public static final String VALIDATOR_ROUTING_KEY = "validator_routing_key";
-    public static final String ETL_ROUTING_KEY = "number-1";
+    @Value("${queue.exchange}")
+    private String QUEUE_EXCHANGE;
+    @Value("${consumer.routing.key}")
+    private String CONSUMER_ROUTING_KEY;
+    @Value("${validator.routing.key}")
+    private String VALIDATOR_ROUTING_KEY;
+    @Value("${etl.routing.key}")
+    private String ETL_ROUTING_KEY;
+    @Value("${consumer.queue}")
+    private String consumerQueue;
+    @Value("${validator.queue}")
+    private String validatorQueue;
+    @Value("${etl.queue}")
+    private String etlQueue;
 
     @Bean
     public Queue queueConsumer() {
-        return new Queue(QueueNames.CONSUMER_QUEUE);
+        return new Queue(consumerQueue);
     }
 
     @Bean
     public Queue queueValidator() {
-        return new Queue(QueueNames.VALIDATOR_QUEUE);
+        return new Queue(validatorQueue);
     }
 
     @Bean
     public Queue etlQueue() {
-        return new Queue(QueueNames.ETL_QUEUE);
+        return new Queue(etlQueue);
     }
 
     @Bean

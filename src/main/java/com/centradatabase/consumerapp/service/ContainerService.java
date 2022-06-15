@@ -1,6 +1,5 @@
 package com.centradatabase.consumerapp.service;
 
-import com.centradatabase.consumerapp.configs.rabbit.QueueNames;
 import com.centradatabase.consumerapp.model.Container;
 import com.centradatabase.consumerapp.model.FileUpload;
 
@@ -11,7 +10,7 @@ import com.centradatabase.consumerapp.repository.MongoRepo;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -26,6 +25,8 @@ public class ContainerService {
     private final MongoRepo mongoRepo;
     private final FileUploadRepository fileUploadRepository;
 
+    @Value("${etl.queue}")
+    private String etlQueue;
     public void createPatient(List<Container> containerList) {
         if(!containerList.isEmpty()) {
             List<Container> containers = new ArrayList<>();
@@ -41,16 +42,15 @@ public class ContainerService {
                         if (flag) {
                             containers.add(container);
                         } else
-                            log.info("Patient Existing");
+                            log.info("Patient already existing");
                     }
                 } else {
                     containers.add(container);
-                    log.info("Patient NOt Existing");
                 }
             }
             if (containers.size() > 0){
                 containerRepository.saveAll(containers);
-                rabbitTemplate.convertAndSend(QueueNames.ETL_QUEUE, containers);
+                rabbitTemplate.convertAndSend(etlQueue, containers);
                 updateFileUpload(containers);
                 containers.clear();
                 log.info("Collection Saved");
