@@ -30,7 +30,7 @@ public class FileUpload {
     private Date etlDate;
     private String status;
     private UUID patientUuid;
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "file_batch_id",referencedColumnName = "fileBatchId")
     private FileBatch fileBatchId;
 

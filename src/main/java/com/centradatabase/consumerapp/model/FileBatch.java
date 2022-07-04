@@ -20,5 +20,6 @@ public class FileBatch {
     private String batchNumber;
     private LocalDateTime uploadDate;
     private String status;
-    private Long userId;
+    @ManyToOne
+    private User user;
 }
