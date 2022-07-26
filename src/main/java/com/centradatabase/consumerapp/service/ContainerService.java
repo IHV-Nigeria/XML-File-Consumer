@@ -1,7 +1,7 @@
 package com.centradatabase.consumerapp.service;
 
 import com.centradatabase.consumerapp.model.Container;
-import com.centradatabase.consumerapp.model.FileUpload;
+import com.centradatabase.consumerapp.entities.FileUpload;
 
 import com.centradatabase.consumerapp.repository.ContainerRepository;
 
